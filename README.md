@@ -6,7 +6,7 @@ This is a reproduction for [Stack Overflow question #46534884][so]
 
 ## Expected output
 
-```csharp
+```js
     [
       {
         "Item1": {
@@ -20,7 +20,7 @@ This is a reproduction for [Stack Overflow question #46534884][so]
 
 ## Actual output
 
-```csharp
+```js
 [
   {
     "Item1": {
