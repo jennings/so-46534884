@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using ServiceStack.DataAnnotations;
 using ServiceStack.OrmLite;
 using System;
 
@@ -35,6 +36,7 @@ namespace OrmLiteLeftJoinTuple
 
     class Order
     {
+        [PrimaryKey]
         public int OrderId { get; set; }
         public string Name { get; set; }
         public override string ToString() => $"OrderId = {OrderId}, Name = {Name}";
@@ -42,6 +44,7 @@ namespace OrmLiteLeftJoinTuple
 
     class LineItem
     {
+        [PrimaryKey]
         public int LineItemId { get; set; }
         public int OrderId { get; set; }
         public override string ToString() => $"LineItemId = {LineItemId}, OrderId = {OrderId}";
