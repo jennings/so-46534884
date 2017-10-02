@@ -25,6 +25,8 @@ namespace OrmLiteLeftJoinTuple
                 var results = db.SelectMulti<Order, LineItem>(query);
 
                 Console.WriteLine(JsonConvert.SerializeObject(results, Formatting.Indented));
+
+                Console.WriteLine();
                 Console.WriteLine("Press any key to exit");
                 Console.ReadKey();
             }
